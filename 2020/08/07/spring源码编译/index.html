@@ -19,38 +19,38 @@
 <meta name="keywords" content="源码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring源码编译">
-<meta property="og:url" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/index.html">
+<meta property="og:url" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/index.html">
 <meta property="og:site_name" content="wen blog">
 <meta property="og:description" content="安装环境配套Gradle 5.6.2 +java version “1.8.0_251”+idea+spring framework5.1.x  Spring framework下载：https://github.com/spring-projects/spring-framework/tree/5.1.x Gradle 6.5.1下载:https://gradle.org/next-steps/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/1.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/2.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/3.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/4.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/5.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/6.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/7.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/8.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/9.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/10.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/11.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/12.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/13.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/15.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/16.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/17.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/18.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/19.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/20.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/21.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/22.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/23.png">
-<meta property="og:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/25.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/1.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/2.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/3.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/4.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/5.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/6.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/7.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/8.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/9.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/10.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/11.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/12.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/13.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/15.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/16.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/17.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/18.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/19.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/20.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/21.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/22.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/23.png">
+<meta property="og:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/25.png">
 <meta property="og:updated_time" content="2020-08-08T01:59:28.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring源码编译">
 <meta name="twitter:description" content="安装环境配套Gradle 5.6.2 +java version “1.8.0_251”+idea+spring framework5.1.x  Spring framework下载：https://github.com/spring-projects/spring-framework/tree/5.1.x Gradle 6.5.1下载:https://gradle.org/next-steps/">
-<meta name="twitter:image" content="https://smallwenzi.github.io/2020/08/07/spring源码编译/1.png">
+<meta name="twitter:image" content="https://blog.yanwentan.xyz/2020/08/07/spring源码编译/1.png">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -387,8 +387,8 @@
         <p><span>发布时间:</span>2020-08-07, 16:02:00</p>
         <p><span>最后更新:</span>2020-08-08, 09:59:28</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/08/07/spring源码编译/" title="spring源码编译">https://smallwenzi.github.io/2020/08/07/spring源码编译/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://smallwenzi.github.io/2020/08/07/spring源码编译/　　作者: wen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2020/08/07/spring源码编译/" title="spring源码编译">https://blog.yanwentan.xyz/2020/08/07/spring源码编译/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://blog.yanwentan.xyz/2020/08/07/spring源码编译/　　作者: wen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
