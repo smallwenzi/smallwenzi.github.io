@@ -775,20 +775,20 @@ a {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-#header .header-nav .social .鏂版氮寰崥 {
-  background: url("/img/鏂版氮寰崥.png") center no-repeat #ecc260;
+#header .header-nav .social .新浪微博 {
+  background: url("/img/新浪微博.png") center no-repeat #ecc260;
   -webkit-background-size: 80%;
   -moz-background-size: 80%;
   background-size: 80%;
 }
-#header .header-nav .social .鐭ヤ箮 {
-  background: url("/img/鐭ヤ箮.png") center no-repeat #0078d8;
+#header .header-nav .social .知乎 {
+  background: url("/img/知乎.png") center no-repeat #0078d8;
   -webkit-background-size: 90%;
   -moz-background-size: 90%;
   background-size: 90%;
 }
-#header .header-nav .social .璞嗙摚 {
-  background: url("/img/璞嗙摚.png") center no-repeat #06c611;
+#header .header-nav .social .豆瓣 {
+  background: url("/img/豆瓣.png") center no-repeat #06c611;
   -webkit-background-size: 88%;
   -moz-background-size: 88%;
   background-size: 88%;
@@ -805,8 +805,8 @@ a {
   -moz-background-size: 82%;
   background-size: 82%;
 }
-#header .header-nav .social .绠€涔� {
-  background: url("/img/绠€涔�.png") center no-repeat #e99888;
+#header .header-nav .social .简书 {
+  background: url("/img/简书.png") center no-repeat #e99888;
   -webkit-background-size: 82%;
   -moz-background-size: 82%;
   background-size: 82%;
@@ -817,14 +817,14 @@ a {
   -moz-background-size: 80%;
   background-size: 80%;
 }
-#header .header-nav .social .缃戞槗浜戦煶涔� {
-  background: url("/img/缃戞槗浜戦煶涔�.png") center no-repeat #e51e02;
+#header .header-nav .social .网易云音乐 {
+  background: url("/img/网易云音乐.png") center no-repeat #e51e02;
   -webkit-background-size: 80%;
   -moz-background-size: 80%;
   background-size: 80%;
 }
-#header .header-nav .social .铏剧背闊充箰 {
-  background: url("/img/铏剧背闊充箰.png") center no-repeat #ff6a00;
+#header .header-nav .social .虾米音乐 {
+  background: url("/img/虾米音乐.png") center no-repeat #ff6a00;
   -webkit-background-size: 82%;
   -moz-background-size: 82%;
   background-size: 82%;
@@ -835,8 +835,8 @@ a {
   -moz-background-size: 82%;
   background-size: 82%;
 }
-#header .header-nav .social .鍗氬鍥� {
-  background: url("/img/鍗氬鍥�.png") center no-repeat #217ed4;
+#header .header-nav .social .博客园 {
+  background: url("/img/博客园.png") center no-repeat #217ed4;
   -webkit-background-size: 95%;
   -moz-background-size: 95%;
   background-size: 95%;
@@ -939,10 +939,10 @@ a {
 #header .header-nav .social .QQ::before {
   content: '\f1d6';
 }
-#header .header-nav .social .寰俊 {
+#header .header-nav .social .微信 {
   background: #8cdc49;
 }
-#header .header-nav .social .寰俊::before {
+#header .header-nav .social .微信::before {
   content: '\f1d7';
 }
 #header .header-nav .social .PayPal {
@@ -1200,7 +1200,7 @@ body .ui-tooltip {
 }
 .archives .archive-article-title span:before {
   display: inline-block;
-  content: "鈥�";
+  content: "“";
   font-family: serif;
   font-size: 30px;
   float: left;
@@ -1343,7 +1343,7 @@ body .ui-tooltip {
 }
 .article-index .brief:before {
   display: inline-block;
-  content: "鈥�";
+  content: "“";
   font-family: serif;
   font-size: 30px;
   float: left;
@@ -1418,7 +1418,7 @@ body .ui-tooltip {
   font-style: italic;
 }
 .article-entry blockquote footer cite::before {
-  content: "鈥�";
+  content: "—";
   padding: 0 0.3em;
 }
 .article-entry a:hover {
@@ -1542,7 +1542,7 @@ body .ui-tooltip {
 }
 .article-entry h2::before,
 .article-entry h2::after {
-  content: " 鈥斺€� ";
+  content: " —— ";
   font-family: Arial;
 }
 .article-entry h3 {
@@ -1670,7 +1670,7 @@ body .ui-tooltip {
 }
 #article-nav-older::after {
   padding-left: 0.5em;
-  content: "鈫�";
+  content: "→";
   color: #fff;
   font-weight: bold;
   font-family: Calibri;
@@ -1681,7 +1681,7 @@ body .ui-tooltip {
 }
 #article-nav-newer::before {
   padding-right: 0.5em;
-  content: "鈫�";
+  content: "←";
   color: #fff;
   font-weight: bold;
   font-family: Calibri;
@@ -2054,7 +2054,7 @@ aside.comment-bar:active {
 }
 .archives .archive-article-title span:before {
   display: inline-block;
-  content: "鈥�";
+  content: "“";
   font-family: serif;
   font-size: 30px;
   float: left;

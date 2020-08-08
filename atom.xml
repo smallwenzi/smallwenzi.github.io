@@ -547,13 +547,13 @@
       <category term="jenkins" scheme="https://smallwenzi.github.io/categories/jenkins/"/>
     
     
+      <category term="jenkins" scheme="https://smallwenzi.github.io/tags/jenkins/"/>
+    
       <category term="git" scheme="https://smallwenzi.github.io/tags/git/"/>
     
       <category term="maven" scheme="https://smallwenzi.github.io/tags/maven/"/>
     
       <category term="docker" scheme="https://smallwenzi.github.io/tags/docker/"/>
-    
-      <category term="jenkins" scheme="https://smallwenzi.github.io/tags/jenkins/"/>
     
   </entry>
   
