@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-<head>
+<head><meta name="generator" content="Hexo 3.9.0">
 
     <!--[if lt IE 9]>
         <style>body {display: none; background: none !important} </style>
@@ -8,34 +8,34 @@
     <![endif]-->
 
 <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="wen" />
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="wen">
 
 
 
-<meta name="description" content="如何使用spring session上一篇文章中介绍了Spring-Session的核心原理，Filter，Session，Repository等等，传送门：SpringSession源码 这篇继上一篇的原理逐渐深入Spring-Session中的事件机制原理的探索。众所周知，Servlet规范中有对HttpSession的事件的处理，如：HttpSessionEvent&#x2F;HttpSessionI">
+<meta name="description" content="如何使用spring session上一篇文章中介绍了Spring-Session的核心原理，Filter，Session，Repository等等，传送门：SpringSession源码 这篇继上一篇的原理逐渐深入Spring-Session中的事件机制原理的探索。众所周知，Servlet规范中有对HttpSession的事件的处理，如：HttpSessionEvent/HttpSessionI">
+<meta name="keywords" content="springsession">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SpringSession源码（二）">
-<meta property="og:url" content="https://smallwenzi.github.io/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
+<meta property="og:url" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/index.html">
 <meta property="og:site_name" content="wen blog">
-<meta property="og:description" content="如何使用spring session上一篇文章中介绍了Spring-Session的核心原理，Filter，Session，Repository等等，传送门：SpringSession源码 这篇继上一篇的原理逐渐深入Spring-Session中的事件机制原理的探索。众所周知，Servlet规范中有对HttpSession的事件的处理，如：HttpSessionEvent&#x2F;HttpSessionI">
-<meta property="og:locale">
+<meta property="og:description" content="如何使用spring session上一篇文章中介绍了Spring-Session的核心原理，Filter，Session，Repository等等，传送门：SpringSession源码 这篇继上一篇的原理逐渐深入Spring-Session中的事件机制原理的探索。众所周知，Servlet规范中有对HttpSession的事件的处理，如：HttpSessionEvent/HttpSessionI">
+<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/1.png">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/2.png">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/3.png">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/4.png">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/5.png">
 <meta property="og:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/6.png">
-<meta property="article:published_time" content="2019-11-22T07:25:00.000Z">
-<meta property="article:modified_time" content="2019-11-22T08:05:37.884Z">
-<meta property="article:author" content="wen">
-<meta property="article:tag" content="springsession">
+<meta property="og:updated_time" content="2020-02-17T15:08:47.570Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="SpringSession源码（二）">
+<meta name="twitter:description" content="如何使用spring session上一篇文章中介绍了Spring-Session的核心原理，Filter，Session，Repository等等，传送门：SpringSession源码 这篇继上一篇的原理逐渐深入Spring-Session中的事件机制原理的探索。众所周知，Servlet规范中有对HttpSession的事件的处理，如：HttpSessionEvent/HttpSessionI">
 <meta name="twitter:image" content="https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/1.png">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
     <link rel="alternate" href="/atom.xml" title="wen blog" type="application/atom+xml">
@@ -58,9 +58,7 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
 
 
-
 <link rel="stylesheet" href="/css/style.css">
-
 
 
 
@@ -111,7 +109,7 @@
     </script>
 
 
-<meta name="generator" content="Hexo 5.0.0"></head>
+</head></html>
 <body>
   <div id="container">
     <div class="left-col">
@@ -122,9 +120,11 @@
             <img src="/img/head.jpg" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/"></a></h1>
+          <h1 class="header-author"><a href="/">wen</a></h1>
         </hgroup>
 
+        
+        <p class="header-subtitle">tanyanwen的技术分享</p>
         
 
         
@@ -193,11 +193,11 @@
                             
                                 <a class="fa Email" href="mailto:beityw@hotmail.com" title="Email"></a>
                             
-                                <a class="fa 新浪微博" target="_blank" rel="noopener" href="http://weibo.com/1762122412" title="新浪微博"></a>
+                                <a class="fa 新浪微博" href="http://weibo.com/1762122412" title="新浪微博"></a>
                             
-                                <a class="fa GitHub" target="_blank" rel="noopener" href="https://github.com/smallwenzi/smallwenzi.github.io" title="GitHub"></a>
+                                <a class="fa GitHub" href="https://github.com/smallwenzi/smallwenzi.github.io" title="GitHub"></a>
                             
-                                <a class="fa 简书" target="_blank" rel="noopener" href="https://www.jianshu.com/u/1e0817ccc306" title="简书"></a>
+                                <a class="fa 简书" href="https://www.jianshu.com/u/1e0817ccc306" title="简书"></a>
                             
                         </ul>
                     </nav>
@@ -206,7 +206,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/RabbitMq/" rel="tag">RabbitMq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/" rel="tag">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/" rel="tag">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/" rel="tag">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/githubpage/" rel="tag">githubpage</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-admin/" rel="tag">hexo-admin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/httpd/" rel="tag">httpd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/" rel="tag">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/" rel="tag">jenkins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jpa/" rel="tag">jpa</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/" rel="tag">maven</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/" rel="tag">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/notepad/" rel="tag">notepad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nutch/" rel="tag">nutch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plantuml/" rel="tag">plantuml</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rabbitMq/" rel="tag">rabbitMq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/red-hat-Linux/" rel="tag">red hat Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resttemplate/" rel="tag">resttemplate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rpm/" rel="tag">rpm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/session/" rel="tag">session</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr/" rel="tag">solr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr-master/" rel="tag">solr-master</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr-slave/" rel="tag">solr-slave</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/" rel="tag">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/" rel="tag">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-config/" rel="tag">spring config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springAdmin/" rel="tag">springAdmin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springsession/" rel="tag">springsession</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thymeleaf/" rel="tag">thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tomcat/" rel="tag">tomcat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/" rel="tag">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/" rel="tag">work</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yum/" rel="tag">yum</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="tag">单例模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C/" rel="tag">工作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/" rel="tag">工作效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag">性能优化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/" rel="tag">消息队列</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%BA%90%E7%A0%81/" rel="tag">源码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BA%BF%E7%A8%8B/" rel="tag">线程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag">设计模式</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/RabbitMq/">RabbitMq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/">atom</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/docker/">docker</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/githubpage/">githubpage</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo-admin/">hexo-admin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/httpd/">httpd</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jenkins/">jenkins</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jpa/">jpa</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/maven/">maven</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/mysql/">mysql</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/notepad/">notepad</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nutch/">nutch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/plantuml/">plantuml</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rabbitMq/">rabbitMq</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/red-hat-Linux/">red hat Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/resttemplate/">resttemplate</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rpm/">rpm</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/session/">session</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr/">solr</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr-master/">solr-master</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/solr-slave/">solr-slave</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring/">spring</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-cloud/">spring cloud</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/spring-config/">spring config</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springAdmin/">springAdmin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/springsession/">springsession</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/thymeleaf/">thymeleaf</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tomcat/">tomcat</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/tools/">tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/work/">work</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/yum/">yum</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/单例模式/">单例模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工作/">工作</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工作效率/">工作效率</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/工具/">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/性能优化/">性能优化</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/消息队列/">消息队列</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/源码/">源码</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/线程/">线程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计模式/">设计模式</a></li></ul>
                     </div>
                 </section>
                 
@@ -215,9 +215,9 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
                     
-                      <a class="main-nav-link switch-friends-link" target="_blank" rel="noopener" href="https://pages.github.com/">GitHub</a>
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
                     
                     </div>
                 </section>
@@ -233,7 +233,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页"></a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">wen</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -241,8 +241,10 @@
                 <img src="/img/head.jpg" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页"></a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">wen</a></h1>
             </hgroup>
+            
+            <p class="header-subtitle">tanyanwen的技术分享</p>
             
             <nav class="header-menu">
                 <ul>
@@ -278,7 +280,7 @@
       <div class="body-wrap"><article id="post-pringSession源码（二）" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/" class="article-date">
+      <a href="/2019/11/22/pringSession源码（二）/" class="article-date">
       <time datetime="2019-11-22T07:25:00.000Z" itemprop="datePublished">2019-11-22</time>
 </a>
 
@@ -309,7 +311,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springsession/" rel="tag">springsession</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/springsession/">springsession</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -405,17 +407,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/">SpringSession源码（二）</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页"></a></p>
+        <p><span>本文标题:</span><a href="/2019/11/22/pringSession源码（二）/">SpringSession源码（二）</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">wen</a></p>
         <p><span>发布时间:</span>2019-11-22, 15:25:00</p>
-        <p><span>最后更新:</span>2019-11-22, 16:05:37</p>
+        <p><span>最后更新:</span>2020-02-17, 23:08:47</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/" title="SpringSession源码（二）">https://smallwenzi.github.io/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/</a>
-            <span class="copy-path" data-clipboard-text="原文: https://smallwenzi.github.io/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2019/11/22/pringSession源码（二）/" title="SpringSession源码（二）">https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://smallwenzi.github.io/2019/11/22/pringSession源码（二）/　　作者: wen" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
         </p>
     </div>
 
@@ -431,7 +433,7 @@
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2019/11/21/SpringSession%E6%BA%90%E7%A0%81/">
+                <a href="/2019/11/21/SpringSession源码/">
                     SpringSession源码
                 </a>
             </div>
@@ -444,7 +446,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Session%E4%BA%8B%E4%BB%B6%E7%9A%84%E6%8A%BD%E8%B1%A1"><span class="toc-number">1.</span> <span class="toc-text">Session事件的抽象</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C-%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A7%A6%E5%8F%91%E6%9C%BA%E5%88%B6"><span class="toc-number">2.</span> <span class="toc-text">二.事件的触发机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session%E5%88%9B%E5%BB%BA%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A7%A6%E5%8F%91"><span class="toc-number">2.1.</span> <span class="toc-text">Session创建事件的触发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session%E5%88%A0%E9%99%A4%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A7%A6%E5%8F%91"><span class="toc-number">2.2.</span> <span class="toc-text">Session删除事件的触发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session%E5%A4%B1%E6%95%88%E4%BA%8B%E4%BB%B6%E7%9A%84%E8%A7%A6%E5%8F%91"><span class="toc-number">2.3.</span> <span class="toc-text">Session失效事件的触发</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Session事件的抽象"><span class="toc-number">1.</span> <span class="toc-text">Session事件的抽象</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-事件的触发机制"><span class="toc-number">2.</span> <span class="toc-text">二.事件的触发机制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Session创建事件的触发"><span class="toc-number">2.1.</span> <span class="toc-text">Session创建事件的触发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session删除事件的触发"><span class="toc-number">2.2.</span> <span class="toc-text">Session删除事件的触发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session失效事件的触发"><span class="toc-number">2.3.</span> <span class="toc-text">Session失效事件的触发</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -483,13 +485,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2019/11/21/SpringSession%E6%BA%90%E7%A0%81/" title="下一篇: SpringSession源码">
+            <a href="/2019/11/21/SpringSession源码/" title="下一篇: SpringSession源码">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/08/07/spring%E6%BA%90%E7%A0%81%E7%BC%96%E8%AF%91/">spring源码编译</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/03/omcat-%E4%B8%89%E7%A7%8D%E9%83%A8%E7%BD%B2%E6%96%B9%E5%BC%8F/">tomcat 三种部署方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/22/bbitMq/">RabbitMq</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/22/pringSession%E6%BA%90%E7%A0%81%EF%BC%88%E4%BA%8C%EF%BC%89/">SpringSession源码（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/SpringSession%E6%BA%90%E7%A0%81/">SpringSession源码</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/tch-%E5%9D%91/">nutch 坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/acheHttpd%E6%97%A5%E5%BF%97%E8%AF%B4%E6%98%8E/">apacheHttpd日志说明</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/ring-session%EF%BC%881%EF%BC%89/">spring session（1）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/%E5%85%B7%E9%9B%86/">工具集</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/ava-%E6%9F%A5%E7%9C%8B%E5%8D%A0%E7%94%A8-CPU-%E6%9C%80%E9%AB%98%E7%9A%84%E7%BA%BF%E7%A8%8B/">[Java] 查看占用 CPU 最高的线程</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/ring-config-bus/">spring config bus</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/pring-admin%E9%85%8D%E7%BD%AE/">spring admin配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/rabbitmq-%E9%98%9F%E5%88%97%E4%BF%A1%E6%81%AF/">查询rabbitmq 队列信息</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/sttemplate-%E9%97%AE%E9%A2%98/">resttemplate 问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/06/A%E9%97%AE%E9%A2%98/">底层代码构造sql忽略NUll条件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/14/windows%E4%B8%8Batom%E4%B8%8A%E6%90%AD%E5%BB%BAPlantUML%E4%B9%A6%E5%86%99%E7%8E%AF%E5%A2%83/">在windows下atom上搭建PlantUML书写环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/14/olr%E7%9A%84%E4%B8%BB%E4%BB%8E%E6%A8%A1%E5%BC%8FMaster-Slave/">Solr的主从模式Master-Slave</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/13/lr%E6%95%99%E7%A8%8B/">solr教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/11/docker%E7%9A%84%E4%BD%BF%E7%94%A8/">docker的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/-jenkins-%E9%85%8D%E7%BD%AEmaven%E6%89%93%E5%8C%85git%E4%BB%A3%E7%A0%81/">十二 jenkins 配置maven打包git代码</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/-jenkins-%E9%85%8D%E7%BD%AEgit%E8%AF%81%E4%B9%A6/">十一 jenkins 配置git证书</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/enkinx-%E9%85%8D%E7%BD%AE%E4%BB%BB%E5%8A%A1/">十）jenkins 配置java和Maven环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/%E4%B9%9D-linux%E9%85%8D%E7%BD%AEjava%E5%92%8Cmaven/">九 linux配置java和maven</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%E5%AE%89%E8%A3%85jenkins/">八）安装jenkins</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/ring-cloud-docker-git-maven-jenkins-Kubernetes-%E7%9B%AE%E5%BD%95/">spring cloud+docker+git+maven+jenkins+Kubernetes 目录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%E4%B8%83%EF%BC%89maven-build-docker-and-push-Image/">七）maven build docker and push Image</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/ocker-mysql/">docker -mysql</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%EF%BC%88%E5%85%AD%EF%BC%89docker%E5%AE%89%E8%A3%85%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%EF%BC%88root%E7%94%A8%E6%88%B7%EF%BC%89/">（六）docker安装本地仓库（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%EF%BC%89%E6%9B%B4%E6%96%B0docker-%E7%89%88%E6%9C%AC%EF%BC%88root%E7%94%A8%E6%88%B7%EF%BC%89/">（五）更新docker 版本（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%EF%BC%88%E5%9B%9B%EF%BC%89%E5%AE%89%E8%A3%85docker%EF%BC%88root%E7%94%A8%E6%88%B7%EF%BC%89/">（四）安装docker（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%E4%B8%89%EF%BC%89linux-%E5%AE%89%E8%A3%85-GIT%EF%BC%88root%E7%94%A8%E6%88%B7%EF%BC%89/">（三）linux 安装 GIT（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/Red-Hat-%E5%8D%87%E7%BA%A7-rpm%E8%BD%AF%E4%BB%B6%E3%80%81YUM%E8%BD%AF%E4%BB%B6%EF%BC%88root%E7%94%A8%E6%88%B7%EF%BC%89/">(二）Red-Hat-升级-rpm软件、YUM软件（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%EF%BC%89oracle-VM%E5%AE%89%E8%A3%85red-hat-liunx/">（一）oracle VM安装red hat liunx</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/hymeleaf%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%9D%91/">thymeleaf学习的坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%E9%82%A3%E4%BA%9B%E6%8F%90%E5%8D%87%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87%E7%9A%84%E5%9C%A8%E7%BA%BF%E5%B7%A5%E5%85%B7/">那些提升开发人员工作效率的在线工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/%E5%8D%87%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/">提升工作效率</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/06/tepad-compare/">Notepad++文本比较插件：Compare</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/28/gtmetix/">用GTmetrix来优化你的网页（集成了YSlow、FireBug的功能）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/Singleton/">java 单例模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/hexo%20git/">Hexo搭建githubpage博客</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/08/07/spring源码编译/">spring源码编译</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/01/03/omcat-三种部署方式/">tomcat 三种部署方式</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/22/bbitMq/">RabbitMq</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/22/pringSession源码（二）/">SpringSession源码（二）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/SpringSession源码/">SpringSession源码</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/tch-坑/">nutch 坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/21/acheHttpd日志说明/">apacheHttpd日志说明</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/ring-session（1）/">spring session（1）</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/具集/">工具集</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/11/13/ava-查看占用-CPU-最高的线程/">[Java] 查看占用 CPU 最高的线程</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/ring-config-bus/">spring config bus</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/pring-admin配置/">spring admin配置</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/rabbitmq-队列信息/">查询rabbitmq 队列信息</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/29/sttemplate-问题/">resttemplate 问题</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/05/06/A问题/">底层代码构造sql忽略NUll条件</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/14/windows下atom上搭建PlantUML书写环境/">在windows下atom上搭建PlantUML书写环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/14/olr的主从模式Master-Slave/">Solr的主从模式Master-Slave</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/13/lr教程/">solr教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/06/11/docker的使用/">docker的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/-jenkins-配置maven打包git代码/">十二 jenkins 配置maven打包git代码</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/-jenkins-配置git证书/">十一 jenkins 配置git证书</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/enkinx-配置任务/">十）jenkins 配置java和Maven环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/11/九-linux配置java和maven/">九 linux配置java和maven</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/安装jenkins/">八）安装jenkins</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/ring-cloud-docker-git-maven-jenkins-Kubernetes-目录/">spring cloud+docker+git+maven+jenkins+Kubernetes 目录</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/七）maven-build-docker-and-push-Image/">七）maven build docker and push Image</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/ocker-mysql/">docker -mysql</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/（六）docker安装本地仓库（root用户）/">（六）docker安装本地仓库（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/）更新docker-版本（root用户）/">（五）更新docker 版本（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/（四）安装docker（root用户）/">（四）安装docker（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/三）linux-安装-GIT（root用户）/">（三）linux 安装 GIT（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/Red-Hat-升级-rpm软件、YUM软件（root用户）/">(二）Red-Hat-升级-rpm软件、YUM软件（root用户）</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/）oracle-VM安装red-hat-liunx/">（一）oracle VM安装red hat liunx</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/hymeleaf学习的坑/">thymeleaf学习的坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/那些提升开发人员工作效率的在线工具/">那些提升开发人员工作效率的在线工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/05/08/升工作效率/">提升工作效率</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/06/tepad-compare/">Notepad++文本比较插件：Compare</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/28/gtmetix/">用GTmetrix来优化你的网页（集成了YSlow、FireBug的功能）</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/Singleton/">java 单例模式</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/hexo git/">Hexo搭建githubpage博客</a></li></ul>
 
 
 
@@ -532,9 +534,7 @@
 </footer>
     </div>
     
-    
-<script src="/js/GithubRepoWidget.js"></script>
-
+    <script src="/js/GithubRepoWidget.js"></script>
 
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 

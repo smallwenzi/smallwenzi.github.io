@@ -876,13 +876,13 @@
         
         <tags>
             
-            <tag> jenkins </tag>
-            
             <tag> git </tag>
             
             <tag> maven </tag>
             
             <tag> docker </tag>
+            
+            <tag> jenkins </tag>
             
         </tags>
         
@@ -907,9 +907,9 @@
         
         <tags>
             
-            <tag> jenkins </tag>
-            
             <tag> git </tag>
+            
+            <tag> jenkins </tag>
             
         </tags>
         
@@ -933,11 +933,11 @@
         
         <tags>
             
-            <tag> jenkins </tag>
-            
             <tag> maven </tag>
             
             <tag> docker </tag>
+            
+            <tag> jenkins </tag>
             
             <tag> java </tag>
             

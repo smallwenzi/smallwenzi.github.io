@@ -7,29 +7,29 @@
     </url>
     
     <url>
-        <loc>https://smallwenzi.github.io/about/</loc>
-        <lastmod>2017-02-24T03:54:33.217Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <url>
-        <loc>https://smallwenzi.github.io//404.html</loc>
-        <lastmod>2017-02-22T02:03:44.015Z</lastmod>
+        <loc>https://smallwenzi.github.io/tags/</loc>
+        <lastmod>2019-04-30T02:20:37.619Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
         <loc>https://smallwenzi.github.io/about/index-1.html</loc>
-        <lastmod>2017-02-21T10:35:57.443Z</lastmod>
+        <lastmod>2019-04-30T02:20:37.618Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
     <url>
-        <loc>https://smallwenzi.github.io/tags/</loc>
-        <lastmod>2017-02-21T10:32:53.083Z</lastmod>
+        <loc>https://smallwenzi.github.io/about/</loc>
+        <lastmod>2019-04-30T02:20:37.618Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smallwenzi.github.io//404.html</loc>
+        <lastmod>2019-04-30T02:20:37.610Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
