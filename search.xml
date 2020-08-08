@@ -1655,8 +1655,18 @@
 <h2 id="Hexo-后台管理配置"><a href="#Hexo-后台管理配置" class="headerlink" title="Hexo 后台管理配置"></a>Hexo 后台管理配置</h2><p>在blog 跟目录下<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-admin</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -d</span><br></pre></td></tr></table></figure>
 <p>如下图：<br><img src="/2017/02/20/hexo git/4.png" alt="logo"><br><a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener">参考</a></p>
-<h2 id="github后台绑上自己的域名"><a href="#github后台绑上自己的域名" class="headerlink" title="github后台绑上自己的域名"></a>github后台绑上自己的域名</h2><h3 id="申请一个域名"><a href="#申请一个域名" class="headerlink" title="申请一个域名"></a>申请一个域名</h3><p>我用的新网买的域名，买好之后进入域名控制台可以看到自己买的域名。<br><img src="/2017/02/20/hexo git/7.png" alt="logo"><br>设置域名解析记录，注意记录类型设置为CNAME，记录值为刚才github上仓库的名字，注意没有https://。<br><img src="/2017/02/20/hexo git/8.png" alt="logo"></p>
-<p>为了能够从别的域名跳转到github页面，还需要在github中进行设置：<br>直接在setting中填写，会自动创建CNAME文件。<br><img src="/2017/02/20/hexo git/9.png" alt="logo"></p>
+<h2 id="github后台绑上自己的域名"><a href="#github后台绑上自己的域名" class="headerlink" title="github后台绑上自己的域名"></a>github后台绑上自己的域名</h2><h3 id="申请一个域名"><a href="#申请一个域名" class="headerlink" title="申请一个域名"></a>申请一个域名</h3><p>我用的新网买的域名（yanwentan.xyz），买好之后进入域名控制台可以看到自己买的域名。<br><img src="/2017/02/20/hexo git/7.png" alt="logo"><br>设置域名解析记录，注意记录类型设置为CNAME，记录值为刚才github上仓库的名字，注意没有https://。<br><img src="/2017/02/20/hexo git/8.png" alt="logo"></p>
+<p>为了能够从别的域名跳转到github页面，还需要在github中进行设置：<br>在博客source目录新增CNAME 文件<br>文件内容 添加自己的域名：blog.yanwentan.xyz</p>
+<p>这样 通过hexo d -g 部署 就会 设置 域名 显示</p>
+<h2 id="免费申请https"><a href="#免费申请https" class="headerlink" title="免费申请https"></a>免费申请https</h2><p><a href="https://dash.cloudflare.com" target="_blank" rel="noopener">https://dash.cloudflare.com</a> 注册一个账号，注册成功后</p>
+<ul>
+<li>新增站点yanwentan.xyz<br><img src="/2017/02/20/hexo git/10.png" alt="logo"></li>
+<li>修改dns映射<br><img src="/2017/02/20/hexo git/12.png" alt="logo"><br>NS    gemma.ns.cloudflare.com<br>NS    henrik.ns.cloudflare.com<br>生效时间24-48小时 </li>
+<li>添加cname记录<br>添加 blog 映射：smallwenzi.github.io<br><img src="/2017/02/20/hexo git/11.png" alt="logo"></li>
+<li>点击上图ssl\TLS  设置您的 SSL/TLS 加密模式为 灵活<br><img src="/2017/02/20/hexo git/13.png" alt="logo"></li>
+<li>点击上图 边缘服务器 进行设置 https<br><img src="/2017/02/20/hexo git/15.png" alt="logo"></li>
+<li>点击 analytics 查看网站访问流量<br><img src="/2017/02/20/hexo git/16.png" alt="logo"></li>
+</ul>
 <h2 id="注意事项（避雷）"><a href="#注意事项（避雷）" class="headerlink" title="注意事项（避雷）"></a>注意事项（避雷）</h2><ul>
 <li>创建.cn/.com等域名可能需要进行实名认证才能正确解析，这在域名控制器中会有提示，若域名解析成功，控制器中会显示DNS服务器地址表示正常服务：</li>
 </ul>
